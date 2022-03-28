@@ -1,0 +1,61 @@
+Django
+
+https://www.djangoproject.com/
+
+장고는 웹 앱을 쉽고 빠르게 만들어 주는 웹 프레임워크
+
+장고는 보안 기능이 강력하다. 
+
+장고는 여러 다양한 기능들이 기본적으로 제공된다. 
+
+장고는 쉽고 재미있다. 
+
+#1 파이썬 가상 환경 설정
+
+파이썬 프로젝트를 진행할 때 독립된 환경을 만들어준다. 예를 들면 2개 또는 3개의 프로젝트를 개발하고 관할 때 각각 독립적인 환경에서 프로젝트들을 진행해야할 경우가 있다. 
+cd..       디렉토리 하나 위로 가기
+md venvs   디렉토리 만들기 
+cd venvs   디렉토리로 들어가기
+
+파이썬 가상환경 셋팅
+python -m venv mysite
+
+mysite 이라는 이름의 가상환경
+
+C:\venvs\mysite\Scripts
+위 경로로 이동하여
+
+activate 을 입력하여 가상환경 진입
+
+(mysite) C:\venvs\mysite\Scripts>
+
+deactivate 을 입력하면 가상환경 나오기
+
+C:\venvs\mysite\Scripts>
+
+
+# 가상환경에 Django 설치
+(mysite) C:\venvs\mysite\Scripts>pip install django==3.1.3
+
+pip install django==3.1.3
+
+# 장고 프로젝트 생성
+장고의 프로젝트 개념은 하나의 사이트라고 보면 된다. 장고프로젝트를 생성하면 한개의 웹 사이트를 생성하는 것이다. 하나의 프로젝트 안에는 여러개의 앱을 만들게 된다. 장고에서의 앱은 사이트를 구성하는 특정 기능이 구현된 작업 단위를 의미한다. 
+
+프로젝트 생성위치
+(mysite) C:\projects\mysite>
+
+장고 프로젝트 생성
+django-admin startproject config .
+( 끝에 점을 주의하자)
+
+# 설치 완료된 django 서버 돌리기
+python manage.py runserver
+
+
+
+# 크롬 브라우저에서 확인
+http://127.0.0.1:8000/
+( 로켓이 보이면 장고 셋팅 성공)
+
+
